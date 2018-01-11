@@ -324,7 +324,7 @@ header.fixed a {
 
 .version-3 nav ul li a:hover {
 	transition: 0.25s ease-in-out;
-	background: rgba(255, 255, 255, .25);
+	background: rgba(150, 100, 0, .75);
 }
 
 .version-3 header {
@@ -485,6 +485,15 @@ img {
 	height: 100%;
 }
 
+#index {
+	background: #fff;
+}
+
+#index article {
+	padding: 70px 5% 70px;
+	position: relative;
+}
+
 @media (max-width: 1080px) {
 
 nav {
@@ -603,7 +612,7 @@ button.hamburger {
 	background: #e9e9e9;
 	position: absolute;
 	top: 0;
-	left: 10%;
+	left: 5%;
 	padding: 10px 15px;
 	text-transform: uppercase;
 	font-size: 13px;
@@ -883,5 +892,122 @@ footer p {
 
 .black-brick:before, .black-brick:after {
 	display: none;
+}
+}
+
+/* MASONRY
+------------------------------------------*/
+.fa.fa-quote-right {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	top: -21px;
+	padding: 10px 10px 8px;
+	border: 1px solid #95ebff;
+	border-radius: 200px;
+	font-size: 20px;
+}
+
+.index-post-box {
+	border: 1px solid #56c8e2;
+	background: #fff;
+}
+
+.grid img {
+	width: 100%;
+}
+
+.grid h3, .grid h3 {
+	color: #333;
+	margin: 0 0 15px 0;
+	font-size: 20px;
+	transition: .25s ease-in;
+}
+
+.grid p {
+	font-size: 14px;
+	margin: 0 0 10px 0;
+	padding: 10px 15px;
+}
+
+.grid .grid-inner p:last-child {
+	margin-bottom: 0;
+}
+
+.grid, .grid {
+	width: 100%;
+	margin: auto;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+.gutter-sizer {
+	width: 3%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.testimonial-container .grid-item {
+	border: 1px solid #e9e9e9;
+}
+
+.index-post-box.light-grey {
+	background-image: url(images/box-gradient.png);
+	background-size: 100% 100%;
+	box-shadow: none;
+	border-color: #95ebff;
+}
+
+/* ---- .grid-item ---- */
+
+@media (min-width: 800px) {
+
+.grid-sizer,
+.grid-item {
+  width: 31.333%;
+}
+
+.et_divi_builder #et_builder_outer_content .et_pb_module img.alignright {
+	
+}
+}
+
+.grid-item, #et_builder_outer_content div .grid-item {
+ margin-bottom: 3%;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 540px) {
+.grid-sizer, .grid-item, .grid-sizer, .grid-item {
+	width: 100%;
+}
+.grid-item {
+ margin-bottom: 5%;
+}
+#et_builder_outer_content div .our_clients .grid-item {
+	margin-bottom: 10%;
+}
+}
+
+@media (min-width: 540px) and (max-width: 800px) {
+.grid-sizer, .grid-item, .grid-sizer, .grid-item {
+	width: 48.5%;
 }
 }
