@@ -897,17 +897,27 @@ footer p {
 
 /* MASONRY
 ------------------------------------------*/
-.fa.fa-quote-right {
+.fa.fa-plus {
 	position: absolute;
 	text-align: center;
 	left: 50%;
-	transform: translateX(-50%);
-	background: #fff;
-	top: -21px;
-	padding: 10px 10px 8px;
-	border: 1px solid #95ebff;
+	top: 50%;
+	transform: translate(-50%, -40%);
+	background: #333;
+	width: 52px;
 	border-radius: 200px;
-	font-size: 20px;
+	font-size: 30px;
+	line-height: 52px;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	z-index: 10;
+	color: #fff;
+}
+
+.grid-item:hover .fa.fa-plus {
+	opacity: 1;
+	transform: translate(-50%, -50%);
+	transition: .5s ease-in-out;
 }
 
 .index-post-box {
@@ -919,17 +929,10 @@ footer p {
 	width: 100%;
 }
 
-.grid h3, .grid h3 {
-	color: #333;
-	margin: 0 0 15px 0;
-	font-size: 20px;
-	transition: .25s ease-in;
-}
-
 .grid p {
 	font-size: 14px;
-	margin: 0 0 10px 0;
 	padding: 10px 15px;
+	margin: 0;
 }
 
 .grid .grid-inner p:last-child {
@@ -992,6 +995,42 @@ footer p {
   max-width: 100%;
   min-width: 100%;
   height: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.grid-inner {
+	position: relative;
+	overflow: hidden;
+}
+
+.grid-inner:before {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: 0.5s ease-in-out;
+	z-index: 1;
+	content: '';
+}
+
+.grid-item a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.grid-item:hover > .grid-inner:before {
+	transition: 0.5s ease-in-out;
+	background: rgba(150, 100, 0, .75);
+}
+
+.grid-item:hover img {
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 540px) {
