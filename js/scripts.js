@@ -1,7 +1,14 @@
-!function(a){a.fn.equalHeights=function(){var b=0,c=a(this);return c.each(function(){var c=a(this).innerHeight();c>b&&(b=c)}),c.css("height",b)},a("[data-equal]").each(function(){var b=a(this),c=b.data("equal");b.find(c).equalHeights()})}(jQuery);
+// MOBILE NAVIGATION
+$('.mobile-nav li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
+$('span.sub-toggle').click(function (){
+  var myUL = $(this).siblings(".sub-menu").slideToggle();
+});
+$('span.sub-toggle').click(function (){
+$(this).children().toggleClass('fa-angle-down fa-angle-up');
+});
 
 // HAMBURGER ICON ANIMATION
-$('.hamburger, .mobile-nav li').click(function() {
+$('.hamburger').click(function() {
 	$('.hamburger, body').toggleClass('is-active');
 });
 
