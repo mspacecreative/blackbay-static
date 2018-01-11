@@ -62,7 +62,7 @@ html {
 
 /* END CSS RESET */
 
-.left-content h1 {
+.left-content h1, article h1 {
 	font-size: 3em;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -490,7 +490,7 @@ img {
 }
 
 #index article {
-	padding: 70px 5% 70px;
+	padding: 8% 5% 5%;
 	position: relative;
 }
 
