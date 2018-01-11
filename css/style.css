@@ -903,7 +903,7 @@ footer p {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -40%);
-	background: #333;
+	background: rgba(255, 255, 255, .35);
 	width: 52px;
 	border-radius: 200px;
 	font-size: 30px;
@@ -912,6 +912,7 @@ footer p {
 	transition: .5s ease-in-out;
 	z-index: 10;
 	color: #fff;
+	pointer-events: none;
 }
 
 .grid-item:hover .fa.fa-plus {
