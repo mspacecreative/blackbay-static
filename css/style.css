@@ -359,10 +359,6 @@ header nav li {
 	position: relative;
 }
 
-nav .sub-menu li:last-child {
-	border-bottom: none;
-}
-
 header nav .menu-item-has-children:hover .sub-menu {
 	opacity: 1;
 	visibility: visible;
@@ -787,7 +783,7 @@ footer p {
 	position: relative;
 }
 
-.mobile-nav li li:last-child {
+.mobile-nav li li:last-child, nav .sub-menu li:last-child {
 	border-bottom: none;
 }
 
