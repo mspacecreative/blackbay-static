@@ -359,6 +359,10 @@ header nav li {
 	position: relative;
 }
 
+nav .sub-menu li:last-child {
+	border-bottom: none;
+}
+
 header nav .menu-item-has-children:hover .sub-menu {
 	opacity: 1;
 	visibility: visible;
