@@ -864,6 +864,7 @@ footer p {
 .timeline .slick-list {
 	width: 100%;
 	margin: auto;
+	overflow: auto!important;
 }
 
 .timeline .slick-list:before {
