@@ -1,3 +1,12 @@
+function movePagination() {
+	if($(window).width() <= 980) {
+	    $('.pagination').insertAfter('.right-content').addClass('mobile');
+	}
+	else {
+		$('.pagination').appendTo('.left-content').removeClass('mobile');
+	}
+}
+
 // HOVER FUNCTIONALITY ON MOBILE
 $('.taphover').bind('touchstart', function() {});
 
@@ -82,6 +91,7 @@ $(document).ready(function () {
     heroBanner();
     halfHeight();
     hamburgerIcon();
+    movePagination();
     /*equalSections();*/
     // SLICK SLIDER
     $('.photo-gallery').slick({
@@ -102,6 +112,7 @@ $(window).resize(function () {
     halfHeight();
     //equalSections();
     hamburgerIcon();
+    movePagination();
 });
 
 // MASONRY
