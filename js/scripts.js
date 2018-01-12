@@ -1,3 +1,7 @@
+// BREADCRUMBS
+$('.breadcrumbs').css('top', $('header').outerHeight());
+
+// PAGINATION RELOCATION ON MOBILE
 function movePagination() {
 	if($(window).width() <= 980) {
 	    $('.pagination').insertAfter('.right-content').addClass('mobile');
