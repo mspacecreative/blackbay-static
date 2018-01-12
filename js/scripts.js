@@ -1,3 +1,6 @@
+// HOVER FUNCTIONALITY ON MOBILE
+$('body').bind('touchstart', function() {});
+
 // MOBILE NAVIGATION
 $('.mobile-nav li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
 $('span.sub-toggle').click(function (){
