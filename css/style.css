@@ -874,6 +874,10 @@ footer p {
 	width: 200px;
 }
 
+article h1 {
+	font-size: 1em;
+}
+
 .one_half.no-margin > div h1 {
 	font-size: 40px;
 }
