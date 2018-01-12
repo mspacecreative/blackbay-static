@@ -1017,11 +1017,11 @@ footer p {
 }
 
 .timeline .slick-next {
-	right: -10px;
+	right: -15px;
 }
 
 .timeline .slick-prev {
-	left: -10px;
+	left: -15px;
 }
 
 .timeline .slick-next:before, .timeline .slick-prev:before {
