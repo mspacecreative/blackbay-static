@@ -1012,6 +1012,14 @@ footer p {
 	width: 200px;
 }
 
+.timeline {
+	max-width: 08%;
+}
+
+.timeline .slick-next:before, .timeline .slick-prev:before {
+	font-size: 45px;
+}
+
 article h1 {
 	font-size: 2.5em;
 	line-height: 1em;
