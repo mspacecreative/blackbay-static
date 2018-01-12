@@ -885,6 +885,10 @@ footer p {
 	min-height: 60px;
 }
 
+p:last-of-type {
+	margin-bottom: 0;
+}
+
 .slick-slide i, .timeline .slick-slide p {
 	position: absolute;
 	left: 50%;
@@ -893,6 +897,12 @@ footer p {
 
 .timeline .slick-slide p {
 	top: 30px;
+}
+
+.slider-for p {
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.2em;
 }
 
 #timeline {

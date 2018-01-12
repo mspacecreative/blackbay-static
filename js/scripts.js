@@ -120,6 +120,7 @@ $(document).ready(function () {
        slidesToShow: 1,
        slidesToScroll: 1,
        arrows: false,
+       adaptiveHeight: true,
        asNavFor: '.timeline',
      });
      $('.timeline').slick({
@@ -129,7 +130,8 @@ $(document).ready(function () {
        dots: true,
        centerMode: true,
        focusOnSelect: true,
-       centerPadding: '5%'
+       centerPadding: '5%',
+       adaptiveHeight: true
      });
 });
 
