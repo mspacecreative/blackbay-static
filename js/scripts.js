@@ -1,3 +1,8 @@
+// RIGHT IMG HEIGHT OF CONTENT
+function inlineImage() {
+	$('.one_third').css('height', $('.two_third').outerHeight());
+}
+
 // BREADCRUMBS
 $('.breadcrumbs').css('top', $('header').outerHeight());
 
@@ -96,6 +101,7 @@ $(document).ready(function () {
     halfHeight();
     hamburgerIcon();
     movePagination();
+    inlineImage();
     /*equalSections();*/
     // SLICK SLIDER
     $('.photo-gallery').slick({
@@ -117,6 +123,7 @@ $(window).resize(function () {
     //equalSections();
     hamburgerIcon();
     movePagination();
+    inlineImage();
 });
 
 // MASONRY

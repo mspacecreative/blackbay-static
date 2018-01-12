@@ -51,6 +51,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -62,7 +66,7 @@ html {
 
 /* END CSS RESET */
 
-.left-content h1, article h1 {
+.left-content h1, article h1, .two_third h1 {
 	font-size: 3em;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -464,8 +468,22 @@ p.light, h1.light {
 	z-index: 1;
 }
 
-.left-content {
+.left-content, .two_third {
 	padding: 70px 5% 70px 0;
+}
+
+.two_third {
+	float: left;
+	width: 66.666%;
+}
+
+.one_third {
+	float: left;
+	width: 33.333%;
+	overflow: hidden;
+	position: relative;
+	background: url(../img/agricola_colour.jpg) no-repeat center center scroll;
+	background-size: cover;
 }
 
 img {
@@ -835,7 +853,7 @@ footer p {
 	left: auto;
 }
 
-.left-content {
+.left-content, .two_third {
 	padding: 70px 5% 50px;
 }
 
@@ -855,7 +873,7 @@ footer p {
 	padding: 0;
 }
 
-.one_half {
+.one_half, .one_third, .two_third {
 	float: none;
 	width: 100%;
 }
