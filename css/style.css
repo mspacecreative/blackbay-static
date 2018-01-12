@@ -574,7 +574,6 @@ button.hamburger {
 .pagination {
 	margin: 40px 0 0;
 	text-transform: uppercase;
-	max-width: 90%;
 }
 
 .pagination div:first-child {
