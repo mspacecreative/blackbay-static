@@ -1,5 +1,8 @@
 // HOVER FUNCTIONALITY ON MOBILE
-$('body').bind('touchstart', function() {});
+$('.hover').bind('touchstart touchend', function(e) {
+  e.preventDefault();
+  $(this).toggleClass('hover_effect');
+});
 
 // MOBILE NAVIGATION
 $('.mobile-nav li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');

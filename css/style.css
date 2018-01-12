@@ -602,7 +602,7 @@ button.hamburger {
 	transition: 0.25s ease-in-out;
 }
 
-.pagination a:hover {
+.pagination a:hover, .pagination.hover_effect {
 	color: #999;
 	transition: 0.25s ease-in-out;
 }
@@ -920,7 +920,7 @@ article h1 {
 	pointer-events: none;
 }
 
-.grid-item:hover .fa.fa-plus {
+.grid-item:hover, .grid-item.hover_effect .fa.fa-plus {
 	opacity: 1;
 	transform: translate(-50%, -50%);
 	transition: .5s ease-in-out;
@@ -1025,17 +1025,17 @@ article h1 {
 	z-index: 2;
 }
 
-.grid-item:hover {
+.grid-item:hover, .grid-item.hover_effect {
 	transition: 0.5s ease-in-out;
 	box-shadow: 0 0 15px #999;
 }
 
-.grid-item:hover > .grid-inner:before {
+.grid-item:hover, .grid-item.hover_effect > .grid-inner:before {
 	transition: 0.5s ease-in-out;
 	background: rgba(150, 100, 0, .75);
 }
 
-.grid-item:hover img {
+.grid-item:hover, .grid-item.hover_effect img {
 	transform: scale(1.1);
 	transition: 0.5s ease-in-out;
 }
