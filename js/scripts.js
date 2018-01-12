@@ -115,6 +115,22 @@ $(document).ready(function () {
         autoplay: true,
         speed: 1000
      });
+     // TIMELINE SLIDER
+     $('.slider-for').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: false,
+       asNavFor: '.timeline',
+     });
+     $('.timeline').slick({
+       slidesToShow: 3,
+       slidesToScroll: 2,
+       asNavFor: '.slider-for',
+       dots: true,
+       centerMode: true,
+       focusOnSelect: true,
+       centerPadding: '5%'
+     });
 });
 
 $(window).resize(function () {
