@@ -883,7 +883,7 @@ footer p {
 	width: 100%;
 }
 
-.photo-gallery, .google-map {
+.photo-gallery, .google-map, .one_third {
 	height: 300px!important;
 }
 }
