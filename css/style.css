@@ -931,9 +931,11 @@ footer p {
 }
 
 .grid p {
-	font-size: 14px;
-	padding: 10px 15px;
+	font-size: 1em;
+	padding: 8px 12px;
 	margin: 0;
+	text-transform: uppercase;
+	line-height: 1.2em;
 }
 
 .grid .grid-inner p:last-child {
@@ -962,15 +964,9 @@ footer p {
   clear: both;
 }
 
-.testimonial-container .grid-item {
+.grid-item {
 	border: 1px solid #e9e9e9;
-}
-
-.index-post-box.light-grey {
-	background-image: url(images/box-gradient.png);
-	background-size: 100% 100%;
-	box-shadow: none;
-	border-color: #95ebff;
+	transition: 0.5s ease-in-out;
 }
 
 /* ---- .grid-item ---- */
@@ -1022,6 +1018,11 @@ footer p {
 	top: 0;
 	left: 0;
 	z-index: 2;
+}
+
+.grid-item:hover {
+	transition: 0.5s ease-in-out;
+	box-shadow: 0 0 15px #999;
 }
 
 .grid-item:hover > .grid-inner:before {
