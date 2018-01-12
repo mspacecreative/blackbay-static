@@ -1016,6 +1016,14 @@ footer p {
 	max-width: 80%;
 }
 
+.timeline .slick-next {
+	right: -10px;
+}
+
+.timeline .slick-prev {
+	left: -10px;
+}
+
 .timeline .slick-next:before, .timeline .slick-prev:before {
 	font-size: 45px;
 }
