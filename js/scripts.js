@@ -1,5 +1,5 @@
 // BREADCRUMBS
-$('.breadcrumbs').css({'top': $('header').outerHeight(), 'width': $('.breadcrumbs h3').width()});
+$('.breadcrumbs').css('top', $('header').outerHeight());
 
 // PAGINATION RELOCATION ON MOBILE
 function movePagination() {
