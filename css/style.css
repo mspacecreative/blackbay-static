@@ -883,7 +883,7 @@ footer p {
 .timeline .slick-slide {
 	position: relative;
 	min-height: 60px;
-	height: auto;
+	height: auto!important;
 }
 
 p:last-of-type {
