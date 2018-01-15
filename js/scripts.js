@@ -153,7 +153,7 @@ $(document).ready(function () {
                slidesToScroll: 3,
                centerPadding: '5%',
              }
-           }
+           },
            {
              breakpoint: 480,
              settings: {
