@@ -159,6 +159,7 @@ $(document).ready(function () {
              settings: {
                slidesToShow: 1,
                slidesToScroll: 1,
+               centerPadding: '5%',
              }
            }
          ]
