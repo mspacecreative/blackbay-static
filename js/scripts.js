@@ -121,15 +121,25 @@ $(document).ready(function () {
        slidesToScroll: 1,
        arrows: false,
        adaptiveHeight: true,
-       asNavFor: '.timeline'
+       asNavFor: '.timeline,.slick-bg',
+       infinite: true
+     });
+     $('.slick-bg').slick({
+       asNavFor: '.timeline,.slider-for',
+       fade: true,
+       infinite: true
      });
      $('.timeline').slick({
        slidesToShow: 3,
-       slidesToScroll: 2,
-       asNavFor: '.slider-for',
+       slidesToScroll: 1,
+       asNavFor: '.slider-for,.slick-bg',
        centerMode: true,
        focusOnSelect: true,
-       centerPadding: '5%'
+       infinite: true
+     });
+     $('.hide-onload').css('visibility', 'hidden');
+     $('.slick-next, .slick-slide').click(function () {
+     	$('.hide-onload').css('visibility', 'visible');
      });
 });
 
