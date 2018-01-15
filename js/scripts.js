@@ -127,7 +127,6 @@ $(document).ready(function () {
        slidesToShow: 3,
        slidesToScroll: 2,
        asNavFor: '.slider-for',
-       dots: true,
        centerMode: true,
        focusOnSelect: true,
        centerPadding: '5%'
