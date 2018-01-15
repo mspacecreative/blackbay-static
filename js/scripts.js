@@ -147,11 +147,18 @@ $(document).ready(function () {
              }
            },
            {
+             breakpoint: 600,
+             settings: {
+               slidesToShow: 3,
+               slidesToScroll: 3,
+               centerPadding: '5%',
+             }
+           }
+           {
              breakpoint: 480,
              settings: {
                slidesToShow: 1,
                slidesToScroll: 1,
-               centerPadding: '5%',
              }
            }
          ]
