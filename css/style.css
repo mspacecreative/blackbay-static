@@ -371,6 +371,10 @@ header.fixed a {
 	clear: both;
 }
 
+.slick-bg.slick-slider button.slick-prev, .slick-bg.slick-slider button.slick-next {
+	display: none!important;
+}
+
 nav .sub-menu {
 	opacity: 0;
 	visibility: hidden;
