@@ -1010,8 +1010,12 @@ p:last-of-type {
 	left: auto;
 }
 
-.left-content, .two_third {
+.two_third {
 	padding: 50px 5%;
+}
+
+.left-content {
+	padding: 80px 5% 50px;
 }
 
 .breadcrumbs {
