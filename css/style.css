@@ -887,7 +887,6 @@ footer p {
 }
 
 .slider-for {
-	margin: 5% auto 0;
 	z-index: 2;
 }
 
@@ -928,6 +927,10 @@ p:last-of-type {
 
 .timeline .slick-slide p {
 	top: 30px;
+}
+
+.timeline {
+	margin: 50px auto;
 }
 
 .slider-for p {
