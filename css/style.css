@@ -941,6 +941,10 @@ p:last-of-type {
 	position: relative;
 }
 
+.hide-onload {
+	visibility: hidden;
+}
+
 @media (max-width: 980px) {
 
 #cta, #cta .one_half:first-child, .current-projects, .cta {

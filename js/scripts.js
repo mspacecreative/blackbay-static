@@ -164,7 +164,6 @@ $(document).ready(function () {
            }
          ]
      });
-     $('.hide-onload').css('visibility', 'hidden');
      $('.slick-next, .slick-slide').click(function () {
      	$('.hide-onload').css('visibility', 'visible');
      });
