@@ -167,14 +167,8 @@ $(document).ready(function () {
      $('.slick-next, .slick-slide, .slick-prev').click(function () {
      	$('.hide-onload').css('visibility', 'visible');
      });
-     $(function(){
-       // Bind the swipeleftHandler callback function to the swipe event on div.box
-       $('.timeline').on( "swiperight", swiperightHandler );
-      
-       // Callback function references the event target and adds the 'swipeleft' class to it
-       function swiperightHandler( event ){
-         $('.hide-onload').css('visibility', 'visible');
-       }
+     $('.timeline').on('touchmove' function() {
+       $('.hide-onload').css('visibility', 'visible');
      });
 });
 
