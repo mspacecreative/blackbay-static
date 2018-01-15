@@ -157,7 +157,8 @@ $(document).ready(function () {
              breakpoint: 480,
              settings: {
                slidesToShow: 1,
-               slidesToScroll: 1
+               slidesToScroll: 1,
+               centerPadding: '2.5%',
              }
            }
          ]

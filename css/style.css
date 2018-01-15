@@ -1037,6 +1037,13 @@ p:last-of-type {
 }
 }
 
+@media (max-width: 480px) {
+
+.timeline .slick-list:before {
+	width: 95%;
+}
+}
+
 @media (min-width: 1080px) {
 
 #index article {
