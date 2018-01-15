@@ -167,7 +167,7 @@ $(document).ready(function () {
      $('.slick-next, .slick-slide, .slick-prev').click(function () {
      	$('.hide-onload').css('visibility', 'visible');
      });
-     $('.timeline').on('touchmove' function() {
+     $('.timeline').on('touchmove', function() {
        $('.hide-onload').css('visibility', 'visible');
      });
 });
