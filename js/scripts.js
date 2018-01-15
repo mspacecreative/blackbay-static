@@ -170,6 +170,9 @@ $(document).ready(function () {
      $('.timeline').on('touchmove', function() {
        $('.hide-onload').css('visibility', 'visible');
      });
+     
+     // LOGO LOADING
+     $('#cover').fadeOut();
 });
 
 $(window).resize(function () {
