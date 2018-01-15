@@ -1040,7 +1040,7 @@ p:last-of-type {
 @media (max-width: 480px) {
 
 .timeline .slick-list:before {
-	width: 95%;
+	width: 90%;
 }
 }
 
