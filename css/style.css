@@ -536,8 +536,12 @@ p.light, h1.light {
 	z-index: 1;
 }
 
-.left-content, .two_third {
+.two_third {
 	padding: 70px 5% 70px;
+}
+
+.left-content {
+	padding: 70px 5% 70px 0;
 }
 
 .two_third {
