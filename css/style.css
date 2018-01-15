@@ -493,7 +493,7 @@ p.light, h1.light {
 }
 
 .left-content, .two_third {
-	padding: 70px 5% 70px 0;
+	padding: 70px 5% 70px;
 }
 
 .two_third {
@@ -886,6 +886,10 @@ footer p {
 	position: relative;
 }
 
+.page article {
+	padding: 70px 0;
+}
+
 .slider-for {
 	z-index: 2;
 }
@@ -958,7 +962,7 @@ p:last-of-type {
 }
 
 .left-content, .two_third {
-	padding: 70px 5% 50px;
+	padding: 50px 5%;
 }
 
 .breadcrumbs {
@@ -1055,10 +1059,6 @@ p:last-of-type {
 
 #index article {
 	padding: 70px 0 35px;
-}
-
-.page article {
-	padding: 70px 0;
 }
 }
 
