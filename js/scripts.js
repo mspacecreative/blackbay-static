@@ -164,7 +164,7 @@ $(document).ready(function () {
            }
          ]
      });
-     $('.slick-next, .slick-slide').click(function () {
+     $('.slick-next, .slick-slide, .slick-prev').click(function () {
      	$('.hide-onload').css('visibility', 'visible');
      });
 });
