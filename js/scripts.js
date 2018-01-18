@@ -1,7 +1,20 @@
+// TEAM BIOS DROPDOWN
+$('.bio').click(function () {
+	$(this).closest('div').next().slideToggle();
+	
+	var el = $(this);
+	if (el.html() == el.data("text-swap")) {
+	  el.html(el.data("text-original"));
+	} else {
+	  el.data("text-original", el.html());
+	  el.html(el.data("text-swap"));
+	}
+});
+
 // RIGHT IMG HEIGHT OF CONTENT
-function inlineImage() {
-	$('.one_third').css('height', $('.two_third').outerHeight());
-}
+//function inlineImage() {
+//	$('.one_third').css('height', $('.two_third').outerHeight());
+//}
 
 // BREADCRUMBS
 $('.breadcrumbs').css('top', $('header').outerHeight());
@@ -101,8 +114,8 @@ $(document).ready(function () {
     halfHeight();
     hamburgerIcon();
     movePagination();
-    inlineImage();
-    /*equalSections();*/
+    //inlineImage();
+    //equalSections();
     // SLICK SLIDER
     $('.photo-gallery').slick({
         dots: true,
@@ -181,7 +194,7 @@ $(window).resize(function () {
     //equalSections();
     hamburgerIcon();
     movePagination();
-    inlineImage();
+    //inlineImage();
 });
 
 // MASONRY
