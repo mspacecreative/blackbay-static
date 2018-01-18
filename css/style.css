@@ -416,6 +416,7 @@ header.fixed a {
 	margin: 0;
 	transition: 0.25s ease-in-out;
 	font-size:0.9em;
+	line-height: 1.15em;
 }
 
 .version-3 nav ul li:last-child {
@@ -941,7 +942,7 @@ footer p {
 }
 
 .is-active .container {
-	transform: translateX(-200px);
+	transform: translateX(-250px);
 	transition: 0.5s ease-in-out;
 }
 
@@ -962,8 +963,8 @@ footer p {
 
 .mobile-nav {
 	position: fixed;
-	right: -200px;
-	width: 200px;
+	right: -250px;
+	width: 250px;
 	transition: 0.5s ease-in-out;
 	height: 100%;
 	top: 0;
@@ -990,7 +991,7 @@ footer p {
 }
 
 .is-active .mobile-nav {
-	transform: translateX(-200px);
+	transform: translateX(-250px);
 	transition: 0.5s ease-in-out;
 }
 
