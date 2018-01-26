@@ -165,6 +165,10 @@ input[type=radio] {
 	margin-bottom: 5%;
 }
 
+.radio-display-block {
+	display: block;
+}
+
 .office-use-section p {
 	margin-bottom: 5%;
 }
