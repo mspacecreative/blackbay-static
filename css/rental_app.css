@@ -162,10 +162,11 @@ input[type=radio] {
 	clear: both;
 	width: 100%;
 	margin-right: 0;
+	margin-bottom: 5%;
 }
 
 .office-use-section p {
-	margin-bottom: 2.5%;
+	margin-bottom: 5%;
 }
 
 .office-use-section p:last-child {
