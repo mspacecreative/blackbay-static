@@ -59,6 +59,8 @@ input[type=text], input[type=email], input[type=tel], textarea {
 	border: 1px solid #c9c9c9;
 	border-top-width: 3px;
 	outline: navy;
+	-webkit-border-radius:0; 
+	border-radius:0;
 }
 
 .clearfix:after {
