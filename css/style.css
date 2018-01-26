@@ -229,6 +229,10 @@ header nav a {
 	margin: 0;
 }
 
+.team-member h3 {
+	margin-bottom: 15px;
+}
+
 @media (min-width: 1280px) {
 
 .headline {
@@ -673,6 +677,7 @@ img {
 
 .bio-area {
 	margin-top: 15px;
+	clear: both;
 }
 
 @media (max-width: 1080px) {

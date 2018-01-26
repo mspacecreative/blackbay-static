@@ -1,6 +1,15 @@
+// RENTAL APP
+$('.pet_yes').click(function () {
+	$('.has_pets').slideToggle();
+});
+
+$('.pet_no').click(function () {
+	$('.has_pets').slideUp();
+});
+
 // TEAM BIOS DROPDOWN
 $('.bio').click(function () {
-	$(this).closest('div').next().slideToggle();
+	$(this).parent().prev().slideToggle();
 	
 	var el = $(this);
 	if (el.html() == el.data("text-swap")) {
