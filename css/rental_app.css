@@ -1,16 +1,7 @@
-body {
-	margin: 0;
-	font-family: "proxima-nova", Proxima Nova, sans-serif;
-}
-
-* {
-	box-sizing: border-box;
-}
-
 .rental_app {
 	margin: auto;
 	max-width: 900px;
-	width: 90%;
+	width: 100%;
 }
 
 #rental_app {
