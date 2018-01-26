@@ -496,7 +496,7 @@ p {
 	transition: 0.5s ease-in-out;
 }
 
-#index {
+#index, #rental_app {
 	max-width: 1600px;
 	margin: auto;
 	transition: 0.5s ease-in-out;
