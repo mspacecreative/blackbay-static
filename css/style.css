@@ -533,7 +533,7 @@ p {
 .fw-container:before {
 	content: '';
 	background: linear-gradient(180deg, #f5f5f5 40%, rgba(255,255,255,0));
-	width: 26.66%;
+	width: 20%;
 	height: 100%;
 	right: 5%;
 	top: 0;
@@ -648,12 +648,12 @@ p.light, h1.light {
 
 .two_third {
 	float: left;
-	width: 66.666%;
+	width: 73.666%;
 }
 
 .one_third {
 	float: right;
-	width: 28.05%;
+	width: 21.05%;
 	position: relative;
 	padding: 70px 3%;
 	right: 5.25%;
