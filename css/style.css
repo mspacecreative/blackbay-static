@@ -1225,6 +1225,13 @@ p:last-of-type {
 }
 }
 
+@media (max-width: 1080px) {
+
+#index article {
+	padding: 70px 0 35px;
+}
+}
+
 @media (max-width: 812px) and (orientation: landscape) {
 
 .headline {
@@ -1276,10 +1283,6 @@ p:last-of-type {
 article h1 {
 	font-size: 2.5em;
 	line-height: 1em;
-}
-
-#index article {
-	padding: 70px 0 35px;
 }
 
 .one_half.no-margin > div h1 {
