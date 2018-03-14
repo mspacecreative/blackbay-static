@@ -39,9 +39,9 @@ function movePagination() {
 }
 
 // MAIN CONTENT TOP PADDING
-function contentPadding() {
-	$('#index, .main-content, #rental_app').css('margin-top', $('header').height() + "px");
-}
+/*function contentPadding() {
+	$('#index').css('margin-top', $('header').height() + "px");
+}*/
 
 // HOVER FUNCTIONALITY ON MOBILE
 $('.taphover').bind('touchstart', function() {});
@@ -129,7 +129,7 @@ $(document).ready(function () {
     halfHeight();
     hamburgerIcon();
     movePagination();
-    contentPadding();
+    //contentPadding();
     //inlineImage();
     //equalSections();
     // SLICK SLIDER
@@ -210,7 +210,7 @@ $(window).resize(function () {
     //equalSections();
     hamburgerIcon();
     movePagination();
-    contentPadding();
+    //contentPadding();
     //inlineImage();
 });
 

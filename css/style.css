@@ -431,23 +431,20 @@ header.fixed a {
 }
 
 .version-3 header {
-	/*background: #000;*/
+	background: #000;
 	z-index: 2;
 	top: 0;
 	left: 0;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: rgba(255,255,255,.5);
 }
 
-.version-3 header {
-	background: #000;
-}
-
 .version-3.home header {
 	background: rgba(255,255,255,.25);
+	position: absolute;
 }
 
 .version-3 header .inner {
@@ -1057,7 +1054,7 @@ footer p {
 .timeline .slick-list:before {
 	width: 90%;
 	content: '';
-	border-top: 2px solid #555;
+	border-top: 2px solid #999;
 	position: absolute;
 	top: 15px;
 }
