@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	overflow-x: hidden;
-	font-family: "proxima-nova", sans-serif;
+	font-family: "proxima-nova", Proxima Nova, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -60,6 +60,10 @@ html {
 
 /* END CSS RESET */
 
+body.version-3 {
+	font-family: "proxima-nova", 'Proxima Nova', sans-serif;
+}
+
 .left-content h1, article h1, .two_third h1 {
 	font-size: 3em;
 	font-weight: 900;
@@ -84,7 +88,7 @@ html {
 	max-width: 100%;
 	height: auto;
 	padding: 20px;
-	background: #000;
+	/*background: #000;*/
 	display: block;
 }
 
@@ -128,7 +132,7 @@ h3 {
 	text-align: right;
 	color: #fff;
 	text-transform: uppercase;
-	font: 900 5em/0.85em "proxima-nova", sans-serif;
+	font: 900 5em/0.85em "proxima-nova", Proxima Nova, sans-serif;
 	z-index: 1;
 	bottom: 50px;
 }
@@ -146,7 +150,7 @@ header nav a {
 	text-decoration: none;
 	color: #000;
 	text-transform: uppercase;
-	font: 700 1em/1em "proxima-nova", sans-serif;
+	font: 700 1em/1em "proxima-nova", Proxima Nova, sans-serif;
 	padding: 15px 15px 12px;
 	display: block;
 	background: #fff;
@@ -206,7 +210,7 @@ header nav a {
 
 .headline {
 	text-transform: uppercase;
-	font: 900 7em/0.8em "proxima-nova", sans-serif;
+	font: 900 7em/0.8em "proxima-nova", Proxima Nova, sans-serif;
 	position: absolute;
 	bottom: -10px;
 }
@@ -302,7 +306,7 @@ button {
 	padding: 10px 15px 8px;
 	position: relative;
 	text-transform: uppercase;
-	font: 700 1em/1em "proxima-nova", sans-serif;
+	font: 700 1em/1em "proxima-nova", Proxima Nova, sans-serif;
 	text-align: center;
 	display: block;
 	border: 2px solid #fff;
@@ -427,9 +431,23 @@ header.fixed a {
 }
 
 .version-3 header {
-	background: #000;
+	/*background: #000;*/
 	z-index: 2;
-	position: relative;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(255,255,255,.5);
+}
+
+.version-3 header {
+	background: #000;
+}
+
+.version-3.home header {
+	background: rgba(255,255,255,.25);
 }
 
 .version-3 header .inner {
@@ -457,6 +475,7 @@ nav .sub-menu {
 	transition: 0.25s ease-in-out;
 	z-index: 1;
 	background: #000;
+	border-top: 1px solid #fff;
 }
 
 header nav li {
@@ -485,7 +504,7 @@ header nav .menu-item-has-children:hover .sub-menu {
 }
 
 p {
-	font: 500 1.15em/1.5em "proxima-nova", Arial, Helvetica, Geneva, sans-serif;
+	font: 500 1.15em/1.5em "proxima-nova", Proxima Nova, Arial, Helvetica, Geneva, sans-serif;
 	margin: 0 0 15px;
 	position: relative;
 }
@@ -501,6 +520,7 @@ p {
 	margin: auto;
 	transition: 0.5s ease-in-out;
 	padding: 0 5%;
+	position: relative;
 }
 
 .fw-container {
@@ -1087,6 +1107,10 @@ p:last-of-type {
 	visibility: hidden;
 }
 
+.main-content {
+	position: relative;
+}
+
 .main-content a {
 	color: #cf8b02;
 	font-weight: bold;
@@ -1437,5 +1461,14 @@ article h1 {
 @media (min-width: 540px) and (max-width: 800px) {
 .grid-sizer, .grid-item, .grid-sizer, .grid-item {
 	width: 48.5%;
+}
+}
+
+@media (min-width: 1600px) {
+
+.version-3 header {
+	max-width: 1600px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 }

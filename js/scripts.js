@@ -26,7 +26,7 @@ $('.bio').click(function () {
 //}
 
 // BREADCRUMBS
-$('.breadcrumbs').css('top', $('header').outerHeight());
+//$('.breadcrumbs').css('top', $('header').outerHeight());
 
 // PAGINATION RELOCATION ON MOBILE
 function movePagination() {
@@ -36,6 +36,11 @@ function movePagination() {
 	else {
 		$('.pagination').appendTo('.left-content').removeClass('mobile');
 	}
+}
+
+// MAIN CONTENT TOP PADDING
+function contentPadding() {
+	$('#index, .main-content, #rental_app').css('margin-top', $('header').height() + "px");
 }
 
 // HOVER FUNCTIONALITY ON MOBILE
@@ -58,7 +63,8 @@ $('.hamburger').click(function() {
 // FULL HEIGHT HER0
 function heroBanner() {
 	//$('.hero').outerHeight($(window).height());
-	$('.version-3 .hero').outerHeight($(window).height()-$('header').outerHeight());
+	//$('.version-3 .hero').outerHeight($(window).height()-$('header').outerHeight());
+	$('.version-3 .hero').outerHeight($(window).height());
 }
 
 // HALF HEIGHT VIEWPORT
@@ -123,6 +129,7 @@ $(document).ready(function () {
     halfHeight();
     hamburgerIcon();
     movePagination();
+    contentPadding();
     //inlineImage();
     //equalSections();
     // SLICK SLIDER
@@ -203,6 +210,7 @@ $(window).resize(function () {
     //equalSections();
     hamburgerIcon();
     movePagination();
+    contentPadding();
     //inlineImage();
 });
 
